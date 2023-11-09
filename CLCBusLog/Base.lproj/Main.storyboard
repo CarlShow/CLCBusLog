@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CLCBusLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CT7-u0-XFn">
+                                <rect key="frame" x="31" y="69" width="331" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Frontmost" id="N7g-OM-X7E">
+                                        <rect key="frame" x="0.0" y="50" width="331" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N7g-OM-X7E" id="F3A-c7-8h2">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr4-M2-IBc">
+                                                    <rect key="frame" x="58" y="5" width="215" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Front of line">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="Charter-Black"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Middlemost" id="p2h-l4-HED">
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="331" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p2h-l4-HED" id="T2O-10-zWj">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maJ-SZ-sfR">
+                                                    <rect key="frame" x="58" y="5" width="215" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Building Exit">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="Charter-Black"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Endmost" id="id3-zk-g2L">
+                                        <rect key="frame" x="0.0" y="137.33333587646484" width="331" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="id3-zk-g2L" id="bQc-Fm-oxJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK0-b5-GWf">
+                                                    <rect key="frame" x="58" y="6" width="215" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="End of line">
+                                                            <attributes>
+                                                                <font key="NSFont" size="24" name="Charter-Black"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="busLane" rowHeight="160" id="LzD-qg-jSX" customClass="customCell" customModule="CLCBusLog" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="181.00000381469727" width="331" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LzD-qg-jSX" id="q12-2j-PLT">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJk-vb-k6D">
+                                                    <rect key="frame" x="20" y="9" width="140" height="140"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjm-Jw-Cc5">
+                                                            <rect key="frame" x="8" y="47" width="124" height="46"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Placeholder">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.20297046390000001" green="0.18266240049999999" blue="0.22124677840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="24" name="Charter-Black"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="AJk-vb-k6D" secondAttribute="height" multiplier="1:1" id="Exv-Hb-ONx"/>
+                                                        <constraint firstItem="Vjm-Jw-Cc5" firstAttribute="top" secondItem="AJk-vb-k6D" secondAttribute="top" constant="47" id="Q43-tR-Iss"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Vjm-Jw-Cc5" secondAttribute="trailing" constant="8" id="hIz-8w-LFs"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Vjm-Jw-Cc5" secondAttribute="bottom" constant="47" id="teZ-XK-5Dx"/>
+                                                        <constraint firstItem="Vjm-Jw-Cc5" firstAttribute="leading" secondItem="AJk-vb-k6D" secondAttribute="leading" constant="8" id="yTC-vN-SFG"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdH-19-9Mx">
+                                                    <rect key="frame" x="171" y="9" width="140" height="140"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4V-9k-pgQ">
+                                                            <rect key="frame" x="8" y="47" width="124" height="46"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Placeholder">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.20297046390000001" green="0.18266240049999999" blue="0.22124677840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="24" name="Charter-Black"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="w4V-9k-pgQ" secondAttribute="trailing" constant="8" id="2vL-8b-Suy"/>
+                                                        <constraint firstItem="w4V-9k-pgQ" firstAttribute="leading" secondItem="gdH-19-9Mx" secondAttribute="leading" constant="8" id="9oz-4V-dHA"/>
+                                                        <constraint firstAttribute="width" secondItem="gdH-19-9Mx" secondAttribute="height" multiplier="1:1" id="Aej-hR-HOW"/>
+                                                        <constraint firstItem="w4V-9k-pgQ" firstAttribute="top" secondItem="gdH-19-9Mx" secondAttribute="top" constant="47" id="B63-m3-MDb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="w4V-9k-pgQ" secondAttribute="bottom" constant="47" id="WjL-eA-fKN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="AJk-vb-k6D" firstAttribute="leading" secondItem="q12-2j-PLT" secondAttribute="leading" constant="20" symbolic="YES" id="9Eo-3e-p6w"/>
+                                                <constraint firstAttribute="bottom" secondItem="AJk-vb-k6D" secondAttribute="bottom" constant="11" id="CXh-F8-cwJ"/>
+                                                <constraint firstItem="gdH-19-9Mx" firstAttribute="top" secondItem="q12-2j-PLT" secondAttribute="top" constant="9" id="f6S-ZB-RDI"/>
+                                                <constraint firstAttribute="bottom" secondItem="gdH-19-9Mx" secondAttribute="bottom" constant="11" id="idf-9J-nNh"/>
+                                                <constraint firstAttribute="trailing" secondItem="gdH-19-9Mx" secondAttribute="trailing" constant="20" symbolic="YES" id="sjv-tR-GDu"/>
+                                                <constraint firstItem="AJk-vb-k6D" firstAttribute="top" secondItem="q12-2j-PLT" secondAttribute="top" constant="9" id="z1o-PH-tQa"/>
+                                                <constraint firstItem="gdH-19-9Mx" firstAttribute="leading" secondItem="AJk-vb-k6D" secondAttribute="trailing" constant="11" id="zmC-eW-AtU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="busNameA" destination="Vjm-Jw-Cc5" id="fFS-ZC-DJR"/>
+                                            <outlet property="busNameB" destination="w4V-9k-pgQ" id="Fcy-90-vOR"/>
+                                            <outlet property="busSlotA" destination="AJk-vb-k6D" id="ogO-VK-SpY"/>
+                                            <outlet property="busSlotB" destination="gdH-19-9Mx" id="EG6-QF-vej"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ap-YY-0Dp">
+                                <rect key="frame" x="31" y="745" width="331" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Update">
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="1" green="0.98519998760000005" blue="0.9866371531" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtp-Zn-pgV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="busView" destination="CT7-u0-XFn" id="jAZ-o6-ZSm"/>
+                        <outlet property="updateButton" destination="6Ap-YY-0Dp" id="Rng-Pa-mER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
